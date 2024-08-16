@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emaan Nadeem</title>
+<link rel="stylesheet" href="style.css">
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+</head>
+<body>
+  
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+                <a href="#">Emaan Nadeem<span>.</span></a>
+            </div>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#">Testimonial</a></li>
+            </ul>
+
+            <i class="ri-menu-4-line"></i>
+        </div>
+
+
+<div class="hero_content">
+    <h3>Hi! I'm</h3>
+    <h1 id="text"></h1>
+    <div class="buttons">
+        <button>Hire Me</button>
+        <button id="downloadCvBtn">Download CV</button>
+    </div>
+
+    <div class="social">
+        <div class="icon">
+            <a href="https://www.linkedin.com/in/emaan-nadeem-44a411246" target="_blank">
+                <i class="ri-linkedin-fill"></i>
+              </a>
+        </div>
+        <div class="icon">
+            <a href="https://github.com/Emaan55" target="_blank">
+      <i class="ri-github-fill"></i>
+      </a>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<section id="about"  class="about">
+   
+    <div class="about-content">
+        
+        <h3>About <span>Me</span></h3>
+        <p>I'm a passionate Frontend Developer  with expertise in HTML, CSS,  and Python. I have a foundation in graphic designing, having completed a basic-level course in the field. Additionally, I gained hands-on experience through a one-month internship, where I applied my skills in a real-world setting. While my expertise is still developing, I'm excited to continue learning and growing as a designer. I am pursuing a degree in Computer Science at Hamdard University, where I continue to expand my knowledge and skills in the field. Combining my varied skills and knowledge, I aim to design and deliver web solutions that inspire and empower.</p>
+            <div class="buttons">
+                <button> <a href="mailto:emaannadeen@gmail.com">Contact</a></button>
+            </div>
+    </div>
+   
+</section>
+
+
+<section class="projects" id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+        <div class="project">
+            <h3>Amazon Clone Website</h3>
+            <a href="https://clone-amazon-emaan.vercel.app/" target="_blank">
+                <img src="image.png" alt="Amazon Clone" style="padding: 20px; border-radius: 50px">
+                </a>
+                <p>This project is a fully functional clone of the Amazon homepage. It features a responsive design with a top navigation bar, search bar, and account options. Below a main banner, various product categories are displayed, including Clothes, Beauty Picks, Pet Care, Furniture, Toys, Electronics, and Fashion Trends. This project showcases proficiency in HTML, CSS, and JavaScript, offering a clean and user-friendly interface.</p>
+        </div>
+
+        <div class="project">
+            <h3>Cute Innovations Co - Landing Page</h3>
+            <a href="https://cdesign-resin.vercel.app/" target="_blank">
+                <img src="cwweb.jpg" alt="Cute Innovations Co" style="padding: 20px; border-radius: 50px">
+            </a>
+            <p>This custom-designed website for Cute Innovations Co. showcases resin products with a vibrant homepage banner and key sections like "Home," "Sales," "Deals," and "New Arrivals." The product gallery features categories such as Minimals, Pendants, Keychains, Customized items, and Sunflower Pendants. This project highlights web design and development skills, emphasizing an engaging and visually appealing user experience.</p>
+        </div>
+
+        <div class="project">
+            <h3>Basic Calculator</h3>
+            <a href="https://github.com/Emaan55/Encryptix/tree/main/Basic%20Calculator" target="_blank">
+                <img src="basiccal.jpg" alt="Cute Innovations Co" style="padding: 10px; border-radius: 50px">
+            </a>
+            <p> The Basic Calculator is a user-friendly tool designed to perform essential arithmetic operations including addition, subtraction, multiplication, and division. With its simple interface, this project demonstrates fundamental programming concepts in a practical application, making it accessible for users of all ages and technical backgrounds.</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+<footer class="footer">
+
+    <ul class="list">
+        <li>
+            <a href="#Projects">Projects</a>
+        </li>
+        <li>
+            <a href="#about">About</a>
+        </li>
+        <li>
+            <a href="mailto:emaannadeen@gmail.com">Contact</a>
+        </li>
+
+    </ul>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
+<script>
+    let menu = document.querySelector('.nav ul');
+    let bars = document.querySelector('.ri-menu-4-line');
+
+    bars.addEventListener('click', () =>{
+        menu.classList.toggle('active');
+    });
+
+
+
+    var typed = new Typed('#text', {
+        strings: ['Emaan', 'Designer', 'Developer','Freelancer'],
+        typeSpeed: 80,
+        backSpeed: 120,
+        loop: true,
+    });
+
+  
+        document.getElementById('downloadCvBtn').addEventListener('click', function() {
+            const link = document.createElement('a');
+            link.href = 'resume.jpg'; 
+            link.download = 'resume.jpg'; 
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+
+</script>
+</body>
+</html>
